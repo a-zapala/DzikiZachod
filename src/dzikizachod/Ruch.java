@@ -1,37 +1,49 @@
 package dzikizachod;
 
 /**
- * Created by Andrzej on 15.05.2017.
+ * Created by Andrzej on 18.05.2017.
  */
 public class Ruch
 {
-    private boolean czyJest;
-    private Gracz kto;
     private Akcja akcja;
-    private Gracz kogo;
 
-    public Gracz dajKto()
-    {
-        return kto;
-    }
-
-    public Akcja dajAkcja()
+    public Akcja akcja()
     {
         return akcja;
     }
 
-    public Gracz dajKogo()
+    public Gracz cel()
     {
-        return kogo;
+        return cel;
     }
 
-    public Ruch(Gracz kto, Akcja akcja, Gracz kogo)
+    private Gracz cel;
+    private boolean pusty;
+
+    public Ruch()
     {
-        this.kto = kto;
-        this.akcja = akcja;
-        this.kogo = kogo;
-        this.czyJest = true;
+        this.pusty=true;
     }
 
-    public
+    public Ruch(Akcja akcja,Gracz cel) //TODO podeklarowac to co omijamy do testow tak jest lepiej
+    {
+        this.akcja=akcja;
+        this.cel=cel;
+        this.pusty=false;
+    }
+
+    public Ruch(Akcja akcja)
+    {
+        this.akcja=akcja;
+        this.pusty=false;
+    }
+
+
+    public boolean czyPusty()
+    {
+        return pusty;
+    }
+
+
+
 }
