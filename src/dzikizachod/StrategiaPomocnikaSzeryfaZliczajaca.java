@@ -8,7 +8,7 @@ import java.util.List;
 public class StrategiaPomocnikaSzeryfaZliczajaca extends StrategiaPomocnikaSzeryfa
 {
     @Override
-    public Ruch podajRuchStrzelania(Stol stol)
+    protected Ruch podajRuchStrzelania(Stol stol)
     {
         List<Gracz> graczeWZasiegu=stol.podajGraczyWZasiegu(super.pomocnikSzeryfa());
         List<Gracz> graczeKtorzyStrzeliliDoSzeryfa=((Szeryf) stol.szeryf()).graczeKtorzyStrzeliliDoSzeryfa();

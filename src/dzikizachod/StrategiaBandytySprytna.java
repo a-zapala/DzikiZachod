@@ -10,8 +10,13 @@ public class StrategiaBandytySprytna extends StrategiaBandyty
 {
     private boolean zabitoOstatnioBandyte;
 
+    public StrategiaBandytySprytna()
+    {
+        this.zabitoOstatnioBandyte = false;
+    }
+
     @Override
-    public Ruch podajRuchStrzelania(Stol stol)
+    protected Ruch podajRuchStrzelania(Stol stol)
     {
         Ruch strzelDoSzeryfa = super.podajRuchStrzelania(stol);
 
@@ -29,7 +34,7 @@ public class StrategiaBandytySprytna extends StrategiaBandyty
 
             for (Gracz g : graczeWZasiegu)
             {
-                if (!super.bandyta().bandyci().contains(g))
+                if (!super.bandyta().bandyciAktywni().contains(g))
                 {
                     graczeWZasieguNieBedacyBandytami.add(g);
                 }
@@ -49,7 +54,7 @@ public class StrategiaBandytySprytna extends StrategiaBandyty
 
             for (Gracz g : graczeWZasiegu)
             {
-                if (super.bandyta().bandyci().contains(g))
+                if (super.bandyta().bandyciAktywni().contains(g))
                 {
                     graczeWZasieguBedacyBandytami.add(g);
                 }

@@ -9,9 +9,10 @@ public abstract class StrategiaPomocnikaSzeryfa extends Strategia
 {
     private PomocnikSzeryfa pomocnikSzeryfa;
 
+
     @Override
 
-    public Ruch podajRuchLeczenie(Stol stol)
+    protected Ruch podajRuchLeczenie(Stol stol)
     {
         List<Gracz> sasiedzi=stol.podajSasiadow(pomocnikSzeryfa);
 
@@ -31,7 +32,7 @@ public abstract class StrategiaPomocnikaSzeryfa extends Strategia
 
     @Override
 
-    public Ruch podajRuchDynamit(Stol stol)
+    protected Ruch podajRuchDynamit(Stol stol)
     {
         List<Gracz> graczeDoSzeryfa = stol.podajGraczyMiedzyGraczemASzeryfem(pomocnikSzeryfa);
 
@@ -48,7 +49,7 @@ public abstract class StrategiaPomocnikaSzeryfa extends Strategia
         if(3*liczbaPotencjalnychBandytow>2*graczeDoSzeryfa.size())
         {
             Ruch ruch=new Ruch(Akcja.DYNAMIT,pomocnikSzeryfa);
-            stol.lezyDynamit(ruch);
+            stol.lezyDynamit(true);
             return ruch;
         }
         else
@@ -57,13 +58,13 @@ public abstract class StrategiaPomocnikaSzeryfa extends Strategia
         }
     }
 
-    public PomocnikSzeryfa pomocnikSzeryfa()
+    protected PomocnikSzeryfa pomocnikSzeryfa()
     {
         return pomocnikSzeryfa;
     }
 
 
-    public void pomocnikSzeryfa(PomocnikSzeryfa pomocnikSzeryfa)
+    protected void pomocnikSzeryfa(PomocnikSzeryfa pomocnikSzeryfa)
     {
         this.pomocnikSzeryfa = pomocnikSzeryfa;
     }

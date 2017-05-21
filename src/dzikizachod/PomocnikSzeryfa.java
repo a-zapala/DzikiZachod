@@ -10,7 +10,7 @@ public class PomocnikSzeryfa extends Gracz
         this(new StrategiaPomocnikaSzeryfaDomyslna());
     }
 
-    public PomocnikSzeryfa(StrategiaPomocnikaSzeryfa strategia)
+    protected PomocnikSzeryfa(StrategiaPomocnikaSzeryfa strategia)
     {
         super();
         super.strategia(strategia);
@@ -18,7 +18,7 @@ public class PomocnikSzeryfa extends Gracz
     }
 
     @Override
-    public boolean odbierzStrzal(Gracz gracz)
+    protected boolean odbierzStrzal(Gracz gracz)
     {
         super.odbierzStrzal(gracz);
 
@@ -31,10 +31,17 @@ public class PomocnikSzeryfa extends Gracz
     }
 
     @Override
-    public boolean czyJestemSzeryfem()
+    protected boolean odbierzDynamit()
+    {
+        return super.odbierzDynamit();
+    }
+
+    @Override
+    protected boolean czyJestemSzeryfem()
     {
         return false;
     }
+
 
 
     @Override

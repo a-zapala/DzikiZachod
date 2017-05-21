@@ -9,7 +9,7 @@ import java.util.List;
 public class StrategiaSzeryfaZliczajaca extends StrategiaSzeryfa
 {
     @Override
-    public Ruch podajRuchStrzelania(Stol stol)
+    protected Ruch podajRuchStrzelania(Stol stol)
     {
         List<Gracz> graczeWZasiegu = stol.podajGraczyWZasiegu(super.szeryf());
         List<Gracz> graczeKtorzyStrzeliliDoSzeryfa = super.szeryf().graczeKtorzyStrzeliliDoSzeryfa();
@@ -25,7 +25,7 @@ public class StrategiaSzeryfaZliczajaca extends StrategiaSzeryfa
                     graczeWZasieguKtorzyStrzeliliDoSzeryfa.add(g);
                 }
             }
-            if(!graczeKtorzyStrzeliliDoSzeryfa.isEmpty())
+            if(!graczeWZasieguKtorzyStrzeliliDoSzeryfa.isEmpty())
             {
                 Gracz cel = super.szeryf().wylosujDoStrzalu(graczeWZasieguKtorzyStrzeliliDoSzeryfa);
                 return new Ruch(Akcja.STRZEL, cel);

@@ -9,17 +9,31 @@ import java.util.List;
 public class Stol
 {
     private List<Gracz> graczeAktywni;
-    private Ruch lezyDynamit;
+    private boolean lezyDynamit;
 
 
     public Stol(List<Gracz> gracze)
     {
         graczeAktywni = new ArrayList<>();
         graczeAktywni.addAll(gracze);
-        lezyDynamit=new Ruch();
+        lezyDynamit=false;
     }
 
-    public Gracz szeryf()
+
+
+    protected boolean lezyDynamit()
+    {
+        return lezyDynamit;
+    }
+
+    protected void lezyDynamit(boolean lezyDynamit)
+    {
+        this.lezyDynamit = lezyDynamit;
+    }
+
+
+
+    protected Gracz szeryf()               //wskazuje na szeryfa
     {
         for (Gracz g : graczeAktywni)
         {
@@ -31,8 +45,7 @@ public class Stol
         return null;
     }
 
-
-    public Gracz podajAktywnegoGraczaNastepnego(Gracz gracz)
+    protected Gracz podajAktywnegoGraczaNastepnego(Gracz gracz)
     {
         int index = graczeAktywni.indexOf(gracz);
         index++;
@@ -47,17 +60,7 @@ public class Stol
         }
     }
 
-    public Ruch lezyDynamit()
-    {
-        return lezyDynamit;
-    }
-
-    public void lezyDynamit(Ruch lezyDynamit)
-    {
-        this.lezyDynamit = lezyDynamit;
-    }
-
-    public List<Gracz> podajSasiadow(Gracz gracz)
+    protected List<Gracz> podajSasiadow(Gracz gracz)
     {
         List<Gracz> sasiedzi = new ArrayList<>();
 
@@ -84,7 +87,7 @@ public class Stol
         return sasiedzi;
     }
 
-    public List<Gracz> podajGraczyWZasiegu(Gracz gracz)
+    protected List<Gracz> podajGraczyWZasiegu(Gracz gracz)
     {
 
         List<Gracz> graczeWZasiegu = new ArrayList<>();
@@ -107,7 +110,7 @@ public class Stol
         }
     }
 
-    public List<Gracz> graczeWZasieguZgodnieZtura(Gracz gracz)
+    protected List<Gracz> graczeWZasieguZgodnieZtura(Gracz gracz)
     {
 
         if (gracz.zasieg() < graczeAktywni.size())
@@ -137,7 +140,7 @@ public class Stol
         }
     }
 
-    public List<Gracz> graczeWZasieguPrzeciwnieDoTury(Gracz gracz)
+    protected List<Gracz> graczeWZasieguPrzeciwnieDoTury(Gracz gracz)
     {
         if (gracz.zasieg() < graczeAktywni.size())
         {
@@ -167,7 +170,7 @@ public class Stol
         }
     }
 
-    public List<Gracz> podajGraczyWZasieguSkracajacyDystansDoSzeryfa(Gracz gracz)
+    protected List<Gracz> podajGraczyWZasieguSkracajacyDystansDoSzeryfa(Gracz gracz)
     {
         int indexSzeryfa = graczeAktywni.indexOf(szeryf());
         int indexGracza = graczeAktywni.indexOf(gracz);
@@ -204,7 +207,7 @@ public class Stol
         }
     }
 
-    public List<Gracz> podajGraczyMiedzyGraczemASzeryfem(Gracz gracz)
+    protected List<Gracz> podajGraczyMiedzyGraczemASzeryfem(Gracz gracz)
     {
         List<Gracz> graczeMiedzyGraczemASzeryfem = new ArrayList<>();
 
@@ -219,6 +222,5 @@ public class Stol
         return graczeMiedzyGraczemASzeryfem;
 
     }
-
 
 }

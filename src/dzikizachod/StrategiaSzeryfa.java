@@ -9,7 +9,19 @@ public abstract class StrategiaSzeryfa extends Strategia
 {
     private Szeryf szeryf;
 
-    public Ruch podajRuchLeczenie(Stol stol)
+
+    protected void szeryf(Szeryf szeryf)
+    {
+        this.szeryf=szeryf;
+    }
+
+    protected Szeryf szeryf()
+    {
+        return szeryf;
+    }
+
+
+    protected Ruch podajRuchLeczenie(Stol stol)
     {
         if(szeryf.czyMoznaMnieLeczyc())
         {
@@ -21,21 +33,8 @@ public abstract class StrategiaSzeryfa extends Strategia
         }
     }
 
-    public void szeryf(Szeryf szeryf)
-    {
-        this.szeryf=szeryf;
-    }
-
-    public Szeryf szeryf()
-    {
-        return szeryf;
-    }
-
-
-
     @Override
-
-    public Ruch podajRuchDynamit(Stol stol)
+    protected Ruch podajRuchDynamit(Stol stol)
     {
         return new Ruch();
     }

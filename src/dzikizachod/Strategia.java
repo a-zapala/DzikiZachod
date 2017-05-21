@@ -9,8 +9,7 @@ import java.util.List;
 public abstract class Strategia
 {
 
-
-    public Ruch podajRuch(List<Akcja> akcje, Stol stol)
+    protected Ruch podajRuch(List<Akcja> akcje, Stol stol)
     {
         if (akcje.contains(Akcja.ULECZ))
         {
@@ -61,11 +60,10 @@ public abstract class Strategia
         return new Ruch(); //zwraca ruch pusty
     }
 
+    protected abstract Ruch podajRuchLeczenie(Stol stol);
 
-    public abstract Ruch podajRuchLeczenie(Stol stol);
+    protected abstract Ruch podajRuchStrzelania(Stol stol);
 
-    public abstract Ruch podajRuchStrzelania(Stol stol);
-
-    public abstract Ruch podajRuchDynamit(Stol stol);
+    protected abstract Ruch podajRuchDynamit(Stol stol);
 
 }

@@ -9,7 +9,7 @@ import java.util.List;
 public class StrategiaPomocnikaSzeryfaDomyslna extends StrategiaPomocnikaSzeryfa
 {
     @Override
-    public Ruch podajRuchStrzelania(Stol stol)
+    protected Ruch podajRuchStrzelania(Stol stol)
     {
         List<Gracz> graczeWZasiegu=stol.podajGraczyWZasiegu(super.pomocnikSzeryfa());
 
@@ -26,9 +26,6 @@ public class StrategiaPomocnikaSzeryfaDomyslna extends StrategiaPomocnikaSzeryfa
                 graczeWZasiegu.remove(g);
             }
         }
-
-
-
         return new Ruch();
     }
 }

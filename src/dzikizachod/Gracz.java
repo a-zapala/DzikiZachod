@@ -25,84 +25,88 @@ public abstract class Gracz
         los = new Random();
         pulaAkcjiGracza = new ArrayList<>();
         zasieg = 1;
-        maksymalnePunktyZycia = los.nextInt(2) + 3; //TODO STALE
+        maksymalnePunktyZycia = los.nextInt(2) + 3;
         aktualnePunktyZycia = maksymalnePunktyZycia;
         bilansZabojstw=0;
     }
 
-    public boolean czyChceszAkcje()
-    {
-        return pulaAkcjiGracza.size()<5;
-    }
-
-    public int bilansZabojstw()
+    /*
+    Gettery i setery
+     */
+    protected int bilansZabojstw()
     {
         return bilansZabojstw;
     }
 
-    public boolean czyMoznaMnieLeczyc()
-    {
-        return maksymalnePunktyZycia>aktualnePunktyZycia;
-    }
-
-    public abstract boolean czyJestemSzeryfem();
-
-    public void aktualnePunktyZycia(int aktualnePunktyZycia )
+    protected void aktualnePunktyZycia(int aktualnePunktyZycia )
     {
         this.aktualnePunktyZycia=aktualnePunktyZycia;
     }
 
-    public int aktualnePunktyZycia()
+    protected int aktualnePunktyZycia()
     {
         return aktualnePunktyZycia;
     }
 
-    public void  maksymalnePunktyZycia(int maksymalnePunktyZycia)
+    protected void  maksymalnePunktyZycia(int maksymalnePunktyZycia)
     {
         this.maksymalnePunktyZycia=maksymalnePunktyZycia;
     }
 
-    public int zasieg(){return zasieg;}
+    protected int zasieg(){return zasieg;}
 
-    public boolean odbierzStrzal(Gracz gracz)
-    {
-        aktualnePunktyZycia--;
-        return false;
-    }
-
-    public boolean odbierzDynamit()
-    {
-        aktualnePunktyZycia--;
-        return false;
-    }
-
-    public void zabilBandyte()
-    {
-        bilansZabojstw--;
-    }
-
-    public void zabilPomocnikaSzeryfa()
-    {
-        bilansZabojstw++;
-    }
-
-    public void strategia(Strategia strategia)
+    protected void strategia(Strategia strategia)
     {
         this.strategia=strategia;
     }
 
-    public Gracz wylosujDoStrzalu(List<Gracz> graczeDoStrzalu)
+
+
+
+    /*
+    metody odnoszace sie do rozgrywki
+     */
+
+    protected boolean czyChceszAkcje()
     {
-        int losowa = los.nextInt(graczeDoStrzalu.size());
-        return graczeDoStrzalu.get(losowa);
+        return pulaAkcjiGracza.size()<5;
     }
 
-    public void dobierzAkcje(Akcja akcja)
+    protected void dobierzAkcje(Akcja akcja)
     {
         pulaAkcjiGracza.add(akcja);
     }
 
-    public int liczbaAkcjiStrzel()
+    protected boolean czyMoznaMnieLeczyc()
+    {
+        return maksymalnePunktyZycia>aktualnePunktyZycia;
+    }
+
+    protected abstract boolean czyJestemSzeryfem();
+
+    protected boolean odbierzStrzal(Gracz gracz)
+    {
+        aktualnePunktyZycia--;
+        return false;
+    }
+
+    protected boolean odbierzDynamit()
+    {
+        aktualnePunktyZycia--;
+        return false;
+    }
+
+    protected void zabilBandyte()
+    {
+        bilansZabojstw--;
+    }
+
+    protected void zabilPomocnikaSzeryfa()
+    {
+        bilansZabojstw++;
+    }
+
+    protected int liczbaAkcjiStrzel() //potrzebne do strategi sprytnej
     {
         int i=0;
 
@@ -116,36 +120,10 @@ public abstract class Gracz
         return i;
     }
 
-    public String wypiszSwojStan()
+    protected boolean wykonajRuch(Stol stol,List<Ruch> ruchy)
     {
-        if (aktualnePunktyZycia > 0)
-        {
-            return (": " + this.toString() + " (liczba żyć: " + aktualnePunktyZycia + ")");
-        }
-        else
-        {
-            return (": X (" + toString() + ")");
-        }
-    }
-
-    public void wypiszAkcje()
-    {
-        System.out.print("Akcje: [");
-
-        int i;
-        for (i = 0; i < pulaAkcjiGracza.size() - 1; i++)
-        {
-
-            System.out.print(pulaAkcjiGracza.get(i).toString() + ", ");
-        }
-
-        System.out.print(pulaAkcjiGracza.get(i).toString() + "]\n");
-    }
-
-    public boolean wykonajRuch(Stol stol,List<Ruch> ruchy)
-    {
-        Ruch ruch=strategia.podajRuch(pulaAkcjiGracza,stol);
-        boolean czyKoniec=false;
+        Ruch ruch=strategia.podajRuch(pulaAkcjiGracza,stol); //strategia podaje konkretny ruch, nastepnie gracz go wykonuje
+        boolean czyKoniec=false;                                //zmienna informuje o koncu gry jest modyfikowana przez szeryfa/bandytow
 
         while(!ruch.czyPusty()&&!czyKoniec)
         {
@@ -169,7 +147,7 @@ public abstract class Gracz
                     this.zwiekszZasieg(2);
                     break;
                 case DYNAMIT:
-                    stol.lezyDynamit(ruch);
+                    stol.lezyDynamit(true);
                     break;
                 default:
                     break;
@@ -180,17 +158,41 @@ public abstract class Gracz
         return czyKoniec;
     }
 
-    public void ulecz()
-    {
-        aktualnePunktyZycia++;
-    }
-
-    public void zwiekszZasieg(int ile)
+    private void zwiekszZasieg(int ile)
     {
         zasieg+=ile;
     }
 
-    public boolean rzucKostka()
+    protected void ulecz()
+    {
+        aktualnePunktyZycia++;
+    }
+
+    protected void zresetujGracza()
+    {
+        aktualnePunktyZycia=maksymalnePunktyZycia;
+        zasieg=1;
+    }
+
+    protected List<Akcja> oddajWszystkieAkcje()
+    {
+        List<Akcja> doOddania=new ArrayList<>();
+        doOddania.addAll(pulaAkcjiGracza);
+        pulaAkcjiGracza.clear();
+        return doOddania;
+    }
+
+    /*
+    metody losowe
+     */
+
+    protected Gracz wylosujDoStrzalu(List<Gracz> graczeDoStrzalu)
+    {
+        int losowa = los.nextInt(graczeDoStrzalu.size());
+        return graczeDoStrzalu.get(losowa);
+    }
+
+    protected boolean rzucKostka()
     {
         int losowa = los.nextInt(6);
 
@@ -199,5 +201,33 @@ public abstract class Gracz
     }
 
 
+    /*
+    wypisywanie informacji
+     */
+    public String wypiszSwojStan()
+    {
+        if (aktualnePunktyZycia > 0)
+        {
+            return (": " + this.toString() + " (liczba żyć: " + aktualnePunktyZycia + ")");
+        }
+        else
+        {
+            return (": X (" + toString() + ")");
+        }
+    }
+
+    protected void wypiszAkcje()
+    {
+        System.out.print("Akcje: [");
+
+        int i;
+        for (i = 0; i < pulaAkcjiGracza.size() - 1; i++)
+        {
+
+            System.out.print(pulaAkcjiGracza.get(i).toString() + ", ");
+        }
+
+        System.out.print(pulaAkcjiGracza.get(i).toString() + "]\n");
+    }
 
 }

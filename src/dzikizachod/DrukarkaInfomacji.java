@@ -30,7 +30,6 @@ public class DrukarkaInfomacji
             System.out.println(wciecie3 +(i+1)+ gracze.get(i).wypiszSwojStan());
         }
         System.out.print("\n");
-
     }
 
     public void informacjaODanejTurze(int numerTury)
@@ -41,7 +40,7 @@ public class DrukarkaInfomacji
     public void informacjeODanajRuchuPrzedRuchem(List<Gracz> gracze,Gracz aktualnyGracz)
     {
 
-        System.out.println(wciecie1+"Gracz " + (gracze.indexOf(aktualnyGracz)+1) + " (" + aktualnyGracz.toString() + "):"); //TODO wprowadzic karty umarłego gracza do tali
+        System.out.println(wciecie1+"Gracz " + (gracze.indexOf(aktualnyGracz)+1) + " (" + aktualnyGracz.toString() + "):");
 
         if (aktualnyGracz.aktualnePunktyZycia() > 0)
         {
@@ -78,25 +77,24 @@ public class DrukarkaInfomacji
         wypiszGraczy(gracze);
     }
 
-
     public void dynamit(int zachowanieDynamitu)
     {
         switch (zachowanieDynamitu)
         {
 
             case (1):
-                System.out.println("DYNAMIT: PRZECHODZI DALEJ");
+                System.out.println(wciecie2+"DYNAMIT: PRZECHODZI DALEJ");
                 break;
 
             case (2):
 
-                System.out.println("DYNAMIT: WYBUCHL");
+                System.out.println(wciecie2+"DYNAMIT: WYBUCHL");
                 break;
 
             case (3):
-                System.out.println("DYNAMIT: WYBUCHL");
-                System.out.print("RUCHY:");
-                System.out.print("MARTWY");
+                System.out.println(wciecie2+"DYNAMIT: WYBUCHL");
+                System.out.print(wciecie2+"RUCHY:");
+                System.out.println(wciecie3+"MARTWY");
                 break;
         }
     }
@@ -118,7 +116,4 @@ public class DrukarkaInfomacji
         System.out.println(koniec);
         System.out.println(wciecie1+"REMIS - OSIAGNIETO LIMIT TUR");
     }
-
-
-
 }

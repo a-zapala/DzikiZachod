@@ -6,7 +6,7 @@ package dzikizachod;
 public class StrategiaBandytyCierpliwa extends StrategiaBandyty
 {
     @Override
-    public Ruch podajRuchStrzelania(Stol stol)
+    protected Ruch podajRuchStrzelania(Stol stol)
     {
         return super.podajRuchStrzelania(stol);
     }

@@ -6,12 +6,18 @@ import java.util.List;
 public class Bandyta extends Gracz
 {
     private static List<Bandyta> bandyci;
-
+    private static List<Bandyta> bandyciAktywni;
 
     public Bandyta()
     {
         this(new StrategiaBandytyDomyslna());
     }
+
+    protected List<Bandyta> bandyciAktywni()
+    {
+        return bandyciAktywni;
+    }
+
 
     public Bandyta(StrategiaBandyty strategia)
     {
@@ -20,27 +26,30 @@ public class Bandyta extends Gracz
         if (bandyci == null)
         {
             bandyci = new ArrayList<>();
+            bandyciAktywni=new ArrayList<>();
             bandyci.add(this);
+            bandyciAktywni.add(this);
         }
         else
         {
             bandyci.add(this);
+            bandyciAktywni.add(this);
         }
         strategia.bandyta(this);
     }
 
     @Override
-    public boolean odbierzStrzal(Gracz gracz)
+    protected boolean odbierzStrzal(Gracz gracz)
     {
         super.odbierzStrzal(gracz);
 
         if (this.aktualnePunktyZycia() == 0)
         {
-            bandyci.remove(this);           //usuwam gracza z listy bandytow
+            bandyciAktywni.remove(this);           //usuwam gracza z listy bandytow
             gracz.zabilBandyte();
         }
 
-        if (bandyci.isEmpty())               //sprawdzam czy została zakonczona gra
+        if (bandyciAktywni.isEmpty())               //sprawdzam czy została zakonczona gra
         {
             return true;
         }
@@ -50,16 +59,31 @@ public class Bandyta extends Gracz
         }
     }
 
-
     @Override
-    public boolean czyJestemSzeryfem()
+    protected boolean odbierzDynamit() //analogicznie do odbierz strzał tylko bez zaliczania killa
     {
-        return false;
+        super.odbierzDynamit();
+
+        if (this.aktualnePunktyZycia() == 0)
+        {
+            bandyciAktywni.remove(this);           //usuwam gracza z listy bandytow
+        }
+
+        if (bandyciAktywni.isEmpty())               //sprawdzam czy została zakonczona gra
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
-    public static List<Bandyta> bandyci()
+    @Override
+    protected void zresetujGracza()
     {
-        return bandyci;
+        super.zresetujGracza();
+        bandyci.addAll(bandyciAktywni);
     }
 
     @Override
@@ -67,5 +91,13 @@ public class Bandyta extends Gracz
     {
         return "Bandyta";
     }
+
+    @Override
+    protected boolean czyJestemSzeryfem()
+    {
+        return false;
+    }
+
+
 
 }

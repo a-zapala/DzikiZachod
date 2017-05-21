@@ -10,6 +10,8 @@ public class Szeryf extends Gracz
 {
     private List<Gracz> graczeKtorzyStrzeliliDoSzeryfa;
 
+
+
     public Szeryf()
     {
         this(new StrategiaSzeryfaDomyslna());
@@ -22,8 +24,9 @@ public class Szeryf extends Gracz
         super.maksymalnePunktyZycia(5);
         strategia.szeryf(this);
         super.strategia(strategia);
-        graczeKtorzyStrzeliliDoSzeryfa=new ArrayList<>();
+        graczeKtorzyStrzeliliDoSzeryfa = new ArrayList<>();
     }
+
 
     public List<Gracz> graczeKtorzyStrzeliliDoSzeryfa()
     {
@@ -31,13 +34,13 @@ public class Szeryf extends Gracz
     }
 
     @Override
-    public boolean odbierzStrzal(Gracz gracz)
+    protected boolean odbierzStrzal(Gracz gracz)
     {
         super.odbierzStrzal(gracz);
 
-        if(!graczeKtorzyStrzeliliDoSzeryfa.contains(gracz))
+        if (!graczeKtorzyStrzeliliDoSzeryfa.contains(gracz))
         {
-            graczeKtorzyStrzeliliDoSzeryfa.add(gracz);
+            graczeKtorzyStrzeliliDoSzeryfa.add(gracz); //dodaje do listy gracza ktory strzela do szeryfa
         }
 
         if (this.aktualnePunktyZycia() == 0)
@@ -51,7 +54,29 @@ public class Szeryf extends Gracz
     }
 
     @Override
-    public boolean czyJestemSzeryfem()
+    protected boolean odbierzDynamit()
+    {
+        super.odbierzDynamit();
+
+        if (this.aktualnePunktyZycia() == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    @Override
+    protected void zresetujGracza()
+    {
+        super.zresetujGracza();
+        graczeKtorzyStrzeliliDoSzeryfa.clear();
+    }
+
+    @Override
+    protected boolean czyJestemSzeryfem()
     {
         return true;
     }

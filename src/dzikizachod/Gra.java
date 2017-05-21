@@ -12,31 +12,25 @@ public class Gra
     private PulaAkcji pulaAkcji;
     private List<Gracz> gracze;
 
-
     public static void main(String[] args)
     {
         List<Gracz> gracze = new ArrayList<>();
+
         gracze.add(new Szeryf());
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 2; i++)
             gracze.add(new PomocnikSzeryfa());
-        for (int i = 0; i < 3 ; i++)
-            gracze.add(new Bandyta(new StrategiaBandytySprytna()));
+        for (int i = 0; i < 5; i++)
+            gracze.add(new Bandyta());
 
         PulaAkcji pulaAkcji = new PulaAkcji();
-        pulaAkcji.dodaj(Akcja.ULECZ, 20);
-        pulaAkcji.dodaj(Akcja.STRZEL, 50);
-        pulaAkcji.dodaj(Akcja.ZASIEG_PLUS_JEDEN, 1);
-        pulaAkcji.dodaj(Akcja.ZASIEG_PLUS_DWA, 2);
+        pulaAkcji.dodaj(Akcja.ULECZ, 35);
+        pulaAkcji.dodaj(Akcja.STRZEL, 200);
+        pulaAkcji.dodaj(Akcja.ZASIEG_PLUS_JEDEN, 20);
+        pulaAkcji.dodaj(Akcja.ZASIEG_PLUS_DWA, 0);
         pulaAkcji.dodaj(Akcja.DYNAMIT, 1);
 
         Gra gra = new Gra();
         gra.rozgrywka(gracze, pulaAkcji);
-    }
-
-
-    public Gra()
-    {
-
     }
 
     public void rozgrywka(List<Gracz> gracze, PulaAkcji pulaAkcji)
@@ -46,6 +40,7 @@ public class Gra
 
         Collections.shuffle(gracze);
         Stol stol = new Stol(gracze);
+
         DrukarkaInfomacji drukarka = new DrukarkaInfomacji();
 
         rozdajAkcjeNaPoczatkuRozgrywki();
@@ -61,7 +56,7 @@ public class Gra
 
             if (aktualnyGracz.aktualnePunktyZycia() > 0)
             {
-                koniecGry = rozpatrzDynamit(aktualnyGracz, stol, drukarka);
+                koniecGry = rozpatrzDynamit(aktualnyGracz, stol, drukarka);  //rozaptrywanie dynamitu
 
                 if (!koniecGry)
                 {
@@ -69,12 +64,14 @@ public class Gra
                     {
                         aktualnyGracz.dobierzAkcje(pulaAkcji.dajAkcje());
                     }
+
                     aktualnyGracz.wypiszAkcje();
 
                     List<Ruch> zuzyteRuchy = new ArrayList<>();
                     koniecGry = aktualnyGracz.wykonajRuch(stol, zuzyteRuchy);
+
                     oddajAkcjeDoPuli(zuzyteRuchy);
-                    drukarka.informacjeODanejTurzePoRuchu(zuzyteRuchy, aktualnyGracz, gracze); //Todo oddawanie kart
+                    drukarka.informacjeODanejTurzePoRuchu(zuzyteRuchy, aktualnyGracz, gracze);
                 }
             }
             aktualnyGracz = podajGraczaNastepnego(aktualnyGracz);
@@ -85,11 +82,9 @@ public class Gra
             }
         }
 
-
         if (koniecGry)
-
         {
-            if (stol.szeryf().aktualnePunktyZycia()==0)
+            if (stol.szeryf().aktualnePunktyZycia() == 0)
             {
                 drukarka.wygraliBandyci();
             }
@@ -99,14 +94,16 @@ public class Gra
             }
         }
         else
-
         {
             drukarka.remis();
         }
 
+        zresetujGre();
     }
 
-    public void rozdajAkcjeNaPoczatkuRozgrywki()
+
+
+    private void rozdajAkcjeNaPoczatkuRozgrywki()
     {
         pulaAkcji.potasujPuleAkcji();
 
@@ -119,7 +116,7 @@ public class Gra
         }
     }
 
-    public Gracz podajGraczaNastepnego(Gracz gracz)
+    private Gracz podajGraczaNastepnego(Gracz gracz)
     {
         int index = gracze.indexOf(gracz);
         index++;
@@ -134,7 +131,7 @@ public class Gra
         }
     }
 
-    public boolean zwiekszNumerTury(Gracz aktualnyGracz)
+    private boolean zwiekszNumerTury(Gracz aktualnyGracz)
     {
         if (aktualnyGracz.czyJestemSzeryfem())
         {
@@ -146,7 +143,7 @@ public class Gra
         }
     }
 
-    public void oddajAkcjeDoPuli(List<Ruch> ruchy)
+    private void oddajAkcjeDoPuli(List<Ruch> ruchy)
     {
         for (Ruch r : ruchy)
         {
@@ -157,14 +154,15 @@ public class Gra
         }
     }
 
-    public boolean rozpatrzDynamit(Gracz aktualnyGracz, Stol stol, DrukarkaInfomacji drukarka)
+    private boolean rozpatrzDynamit(Gracz aktualnyGracz, Stol stol, DrukarkaInfomacji drukarka)
     {
         boolean koniecGry = false;
-        if (!stol.lezyDynamit().czyPusty())
+        if (stol.lezyDynamit())
         {
             if (aktualnyGracz.rzucKostka())
             {
-                koniecGry = aktualnyGracz.odbierzStrzal(stol.lezyDynamit().cel());
+                koniecGry = aktualnyGracz.odbierzDynamit();
+
 
                 if (aktualnyGracz.aktualnePunktyZycia() == 0) //jesli dynamit zabił
                 {
@@ -174,13 +172,32 @@ public class Gra
                 {
                     drukarka.dynamit(2);
                 }
+
+                stol.lezyDynamit(false);
             }
             else
             {
                 drukarka.dynamit(1);
             }
+
         }
 
         return koniecGry;
+    }
+
+    private void zresetujGre() //na koniec powraca graczy do stanu pierwotnego rowniez pule akcji
+    {
+        for(Gracz g:gracze)
+        {
+            List<Akcja> akcjeGracza=g.oddajWszystkieAkcje();
+            g.zresetujGracza();
+            for(Akcja a: akcjeGracza)
+            {
+                pulaAkcji.odbierzAkcje(a);
+            }
+        }
+
+        pulaAkcji.zresetujPuleAkcji();
+
     }
 }

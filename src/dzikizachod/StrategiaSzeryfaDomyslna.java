@@ -9,7 +9,7 @@ import java.util.List;
 public class StrategiaSzeryfaDomyslna extends StrategiaSzeryfa
 {
     @Override
-    public Ruch podajRuchStrzelania(Stol stol)
+    protected Ruch podajRuchStrzelania(Stol stol)
     {
         List<Gracz> graczeWZasiegu = stol.podajGraczyWZasiegu(super.szeryf());
         List<Gracz> graczeKtorzyStrzeliliDoSzeryfa = super.szeryf().graczeKtorzyStrzeliliDoSzeryfa();

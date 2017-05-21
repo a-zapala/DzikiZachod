@@ -21,11 +21,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="Gracz.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dzikizachod/Gracz.java">
+      <file leaf-file-name="Bandyta.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dzikizachod/Bandyta.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2736">
-              <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+            <state relative-caret-position="1640">
+              <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+              <folding>
+                <element signature="method#odbierzDynamit#0;class#Bandyta#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Strategia.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dzikizachod/Strategia.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="870">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -34,42 +46,26 @@
       <file leaf-file-name="PulaAkcji.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dzikizachod/PulaAkcji.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ruch.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dzikizachod/Ruch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gra.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dzikizachod/Gra.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4320">
-              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+            <state relative-caret-position="349">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#PulaAkcji#0;class#PulaAkcji#0" expanded="false" />
+                <element signature="method#dodaj#0;class#PulaAkcji#0" expanded="false" />
+                <element signature="method#odbierzAkcje#0;class#PulaAkcji#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Szeryf.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dzikizachod/Szeryf.java">
+      <file leaf-file-name="Gra.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dzikizachod/Gra.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="640">
+              <caret line="27" column="52" lean-forward="false" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
               <folding>
-                <marker date="1495140669079" expanded="true" signature="1241:1248" ph="{...}" />
+                <element signature="method#podajGraczaNastepnego#0;class#Gra#0" expanded="false" />
+                <element signature="method#zwiekszNumerTury#0;class#Gra#0" expanded="false" />
+                <element signature="method#oddajAkcjeDoPuli#0;class#Gra#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -78,54 +74,77 @@
       <file leaf-file-name="PomocnikSzeryfa.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dzikizachod/PomocnikSzeryfa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1116">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
-                <marker date="1495146024967" expanded="true" signature="792:799" ph="{...}" />
+                <element signature="method#odbierzStrzal#0;class#PomocnikSzeryfa#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StrategiaBandytySprytna.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaBandytySprytna.java">
+      <file leaf-file-name="StrategiaSzeryfaDomyslna.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaSzeryfaDomyslna.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2052">
-              <caret line="57" column="10" lean-forward="false" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bandyta.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dzikizachod/Bandyta.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2304">
-              <caret line="64" column="4" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrukarkaInfomacji.java" pinned="false" current-in-tab="false">
-        <entry file="file://D:/ProjetyInformatyka/IdeaProjects/DzikiZachod2/src/dzikizachod/DrukarkaInfomacji.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2592">
-              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="400">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
-                <element signature="e#974#975#0" expanded="false" />
-                <element signature="e#1026#1027#0" expanded="false" />
+                <element signature="method#podajRuchStrzelania#0;class#StrategiaSzeryfaDomyslna#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StrategiaBandytyDomyslna.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaBandytyDomyslna.java">
+      <file leaf-file-name="StrategiaSzeryfa.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaSzeryfa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="20" column="131" lean-forward="false" selection-start-line="20" selection-start-column="131" selection-end-line="20" selection-end-column="131" />
-              <folding />
+            <state relative-caret-position="840">
+              <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+              <folding>
+                <element signature="method#podajRuchLeczenie#0;class#StrategiaSzeryfa#0" expanded="false" />
+                <element signature="e#627#628#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StrategiaPomocnikaSzeryfaZliczajaca.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaPomocnikaSzeryfaZliczajaca.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding>
+                <element signature="method#podajRuchStrzelania#0;class#StrategiaPomocnikaSzeryfaZliczajaca#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StrategiaBandyty.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaBandyty.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+              <folding>
+                <element signature="method#podajRuchLeczenie#0;class#StrategiaBandyty#0" expanded="false" />
+                <element signature="method#podajRuchStrzelania#0;class#StrategiaBandyty#0" expanded="false" />
+                <element signature="method#podajRuchDynamit#0;class#StrategiaBandyty#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ruch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dzikizachod/Ruch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="960">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding>
+                <element signature="method#Ruch#0;class#Ruch#0" expanded="false" />
+                <element signature="method#Ruch#1;class#Ruch#0" expanded="false" />
+                <element signature="method#Ruch#2;class#Ruch#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,6 +170,7 @@
       <find>punkTy</find>
       <find>graczeWsz</find>
       <find>wypisz</find>
+      <find>dynami</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -165,38 +185,37 @@
         <option value="$PROJECT_DIR$/src/dzikizachod/Main.java" />
         <option value="$PROJECT_DIR$/src/dzikizachod/Rola.java" />
         <option value="$PROJECT_DIR$/src/dzikizachod/PunktyZyciaGraczy.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaBandytyCierpliwa.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/Strategia.java" />
         <option value="$PROJECT_DIR$/src/dzikizachod/HistoriaAkcji.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaSzeryfaZliczajaca.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/PomocnikSzeryfa.java" />
         <option value="$PROJECT_DIR$/src/dzikizachod/InformacjeOGraczu.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaPomocnikaSzeryfa.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaPomocnikaSzeryfaZliczajaca.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaBandyty.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/InformacjeOWszystkichGraczach.java" />
+        <option value="D:/ProjetyInformatyka/IdeaProjects/DzikiZachod2/src/dzikizachod/DrukarkaInfomacji.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/Ruch.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/PomocnikSzeryfa.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/Stol.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/Strategia.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaBandytyCierpliwa.java" />
         <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaBandytyDomyslna.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaBandytySprytna.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaPomocnikaSzeryfa.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaPomocnikaSzeryfaDomyslna.java" />
         <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaSzeryfa.java" />
         <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaSzeryfaDomyslna.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaBandytySprytna.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/InformacjeOWszystkichGraczach.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/PulaAkcji.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/Ruch.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/DrukarkaInfomacji.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/Bandyta.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/Gra.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/Stol.java" />
-        <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaPomocnikaSzeryfaDomyslna.java" />
-        <option value="D:/ProjetyInformatyka/IdeaProjects/DzikiZachod2/src/dzikizachod/DrukarkaInfomacji.java" />
         <option value="$PROJECT_DIR$/src/dzikizachod/Szeryf.java" />
         <option value="$PROJECT_DIR$/src/dzikizachod/Gracz.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/PulaAkcji.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/Bandyta.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaBandyty.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/DrukarkaInfomacji.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaSzeryfaZliczajaca.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/StrategiaPomocnikaSzeryfaZliczajaca.java" />
+        <option value="$PROJECT_DIR$/src/dzikizachod/Gra.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-16" />
-    <option name="y" value="-16" />
-    <option name="width" value="3856" />
-    <option name="height" value="2092" />
+    <option name="x" value="1906" />
+    <option name="width" value="1948" />
+    <option name="height" value="2074" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -230,6 +249,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -262,7 +282,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -271,7 +290,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
     <property name="create.test.in.the.same.root" value="true" />
   </component>
   <component name="RunDashboard">
@@ -543,30 +562,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3856" height="2092" extended-state="0" />
+    <frame x="1906" y="0" width="1948" height="2074" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.49465242" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889628" sideWeight="0.49572194" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15488397" sideWeight="0.49572194" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25882354" sideWeight="0.14144385" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25679424" sideWeight="0.85855615" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41144413" sideWeight="0.85855615" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21020521" sideWeight="0.49465242" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1490333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30897704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39287642" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3810316" sideWeight="0.47112298" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.83378303" sideWeight="0.47112298" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -615,13 +635,31 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dzikizachod/StrategiaSzeryfa.java</url>
-          <line>28</line>
+          <url>file://$PROJECT_DIR$/src/dzikizachod/Strategia.java</url>
+          <line>53</line>
           <properties />
-          <option name="timeStamp" value="46" />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dzikizachod/Gracz.java</url>
+          <line>149</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dzikizachod/Gracz.java</url>
+          <line>153</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dzikizachod/Gracz.java</url>
+          <line>150</line>
+          <properties />
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="50" />
+      <option name="time" value="69" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -630,19 +668,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/InformacjeOWszystkichGraczach.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaSzeryfaDomyslna.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1980">
           <caret line="58" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,7 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -666,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1092">
           <caret line="35" column="10" lean-forward="false" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -682,7 +708,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="method#Gracz#0;class#Gracz#0" expanded="false" />
+            <element signature="method#maksymalnePunktyZycia#0;class#Gracz#0" expanded="false" />
+            <element signature="method#odbierzDynamit#0;class#Gracz#0" expanded="false" />
+            <element signature="e#2029#2030#0" expanded="true" />
+            <element signature="e#2061#2062#0" expanded="true" />
+            <element signature="method#liczbaAkcjiStrzel#0;class#Gracz#0" expanded="false" />
+            <element signature="method#wylosujDoStrzalu#0;class#Gracz#0" expanded="false" />
+            <element signature="method#rzucKostka#0;class#Gracz#0" expanded="false" />
+            <element signature="method#wypiszSwojStan#0;class#Gracz#0" expanded="false" />
+            <element signature="method#wypiszAkcje#0;class#Gracz#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -690,7 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -698,9 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <marker date="1495146024967" expanded="true" signature="792:799" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -708,9 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#240#241#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -718,9 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,7 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="6" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,7 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="5" column="80" lean-forward="false" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,7 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,7 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="5" column="63" lean-forward="false" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,9 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="5" column="63" lean-forward="false" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-          <folding>
-            <element signature="e#240#241#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -802,7 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,204 +845,262 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dzikizachod/PunktyZyciaGraczy.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="491" column="0" lean-forward="false" selection-start-line="491" selection-start-column="0" selection-end-line="491" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dzikizachod/Rola.java" />
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/Akcja.java">
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/InformacjeOGraczu.java" />
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/InformacjeOWszystkichGraczach.java" />
+    <entry file="file://D:/ProjetyInformatyka/IdeaProjects/DzikiZachod2/src/dzikizachod/DrukarkaInfomacji.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="627">
+          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dzikizachod/Stol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/InformacjeOGraczu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/Strategia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaSzeryfaDomyslna.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="18" column="90" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaSzeryfaZliczajaca.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaSzeryfa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaPomocnikaSzeryfa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaPomocnikaSzeryfaDomyslna.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaPomocnikaSzeryfaZliczajaca.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaBandyty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="24" column="90" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="90" />
-          <folding />
+        <state relative-caret-position="-485">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="method#Stol#0;class#Stol#0" expanded="false" />
+            <element signature="method#szeryf#0;class#Stol#0" expanded="false" />
+            <element signature="method#podajAktywnegoGraczaNastepnego#0;class#Stol#0" expanded="false" />
+            <element signature="method#podajSasiadow#0;class#Stol#0" expanded="false" />
+            <element signature="method#podajGraczyWZasiegu#0;class#Stol#0" expanded="false" />
+            <element signature="method#graczeWZasieguZgodnieZtura#0;class#Stol#0" expanded="false" />
+            <element signature="method#graczeWZasieguPrzeciwnieDoTury#0;class#Stol#0" expanded="false" />
+            <element signature="method#podajGraczyWZasieguSkracajacyDystansDoSzeryfa#0;class#Stol#0" expanded="false" />
+            <element signature="method#podajGraczyMiedzyGraczemASzeryfem#0;class#Stol#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaBandytyCierpliwa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="520">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#240#241#0" expanded="false" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaBandytyDomyslna.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="20" column="131" lean-forward="false" selection-start-line="20" selection-start-column="131" selection-end-line="20" selection-end-column="131" />
-          <folding />
+        <state relative-caret-position="400">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="method#podajRuchStrzelania#0;class#StrategiaBandytyDomyslna#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaBandytySprytna.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="57" column="10" lean-forward="false" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
+        <state relative-caret-position="560">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="method#podajRuchStrzelania#0;class#StrategiaBandytySprytna#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaPomocnikaSzeryfa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="method#podajRuchLeczenie#0;class#StrategiaPomocnikaSzeryfa#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/Akcja.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/ProjetyInformatyka/IdeaProjects/DzikiZachod2/src/dzikizachod/DrukarkaInfomacji.java">
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/DrukarkaInfomacji.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2592">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state relative-caret-position="183">
+          <caret line="85" column="44" lean-forward="false" selection-start-line="85" selection-start-column="44" selection-end-line="85" selection-end-column="44" />
           <folding>
-            <element signature="e#974#975#0" expanded="false" />
-            <element signature="e#1026#1027#0" expanded="false" />
+            <element signature="method#infomacjeStart#0;class#DrukarkaInfomacji#0" expanded="false" />
+            <element signature="method#wypiszGraczy#0;class#DrukarkaInfomacji#0" expanded="false" />
+            <element signature="method#informacjeODanejTurzePoRuchu#0;class#DrukarkaInfomacji#0" expanded="false" />
+            <element signature="method#wygralSzeryf#0;class#DrukarkaInfomacji#0" expanded="false" />
+            <element signature="method#wygraliBandyci#0;class#DrukarkaInfomacji#0" expanded="false" />
+            <element signature="method#remis#0;class#DrukarkaInfomacji#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/Szeryf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="68" column="5" lean-forward="false" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+          <folding>
+            <element signature="method#Szeryf#1;class#Szeryf#0" expanded="false" />
+            <element signature="method#odbierzStrzal#0;class#Szeryf#0" expanded="false" />
+            <element signature="method#odbierzDynamit#0;class#Szeryf#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaPomocnikaSzeryfaDomyslna.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="method#podajRuchStrzelania#0;class#StrategiaPomocnikaSzeryfaDomyslna#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaSzeryfaZliczajaca.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="869">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="491" column="0" lean-forward="false" selection-start-line="491" selection-start-column="0" selection-end-line="491" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/Gracz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="151" column="24" lean-forward="true" selection-start-line="151" selection-start-column="24" selection-end-line="151" selection-end-column="24" />
+          <folding>
+            <element signature="method#Gracz#0;class#Gracz#0" expanded="false" />
+            <element signature="method#maksymalnePunktyZycia#0;class#Gracz#0" expanded="false" />
+            <element signature="method#odbierzDynamit#0;class#Gracz#0" expanded="false" />
+            <element signature="e#2029#2030#0" expanded="true" />
+            <element signature="e#2061#2062#0" expanded="true" />
+            <element signature="method#liczbaAkcjiStrzel#0;class#Gracz#0" expanded="false" />
+            <element signature="method#wylosujDoStrzalu#0;class#Gracz#0" expanded="false" />
+            <element signature="method#rzucKostka#0;class#Gracz#0" expanded="false" />
+            <element signature="method#wypiszSwojStan#0;class#Gracz#0" expanded="false" />
+            <element signature="method#wypiszAkcje#0;class#Gracz#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dzikizachod/Bandyta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2304">
-          <caret line="64" column="4" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/Szeryf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="1640">
+          <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding>
-            <marker date="1495140669079" expanded="true" signature="1241:1248" ph="{...}" />
+            <element signature="method#odbierzDynamit#0;class#Bandyta#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/PomocnikSzeryfa.java">
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaBandyty.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="1080">
+          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
           <folding>
-            <marker date="1495146024967" expanded="true" signature="792:799" ph="{...}" />
+            <element signature="method#podajRuchLeczenie#0;class#StrategiaBandyty#0" expanded="false" />
+            <element signature="method#podajRuchStrzelania#0;class#StrategiaBandyty#0" expanded="false" />
+            <element signature="method#podajRuchDynamit#0;class#StrategiaBandyty#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/Ruch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="method#Ruch#0;class#Ruch#0" expanded="false" />
+            <element signature="method#Ruch#1;class#Ruch#0" expanded="false" />
+            <element signature="method#Ruch#2;class#Ruch#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dzikizachod/PulaAkcji.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="349">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="method#PulaAkcji#0;class#PulaAkcji#0" expanded="false" />
+            <element signature="method#dodaj#0;class#PulaAkcji#0" expanded="false" />
+            <element signature="method#odbierzAkcje#0;class#PulaAkcji#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/PomocnikSzeryfa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="method#odbierzStrzal#0;class#PomocnikSzeryfa#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaSzeryfaDomyslna.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="method#podajRuchStrzelania#0;class#StrategiaSzeryfaDomyslna#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaSzeryfa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding>
+            <element signature="method#podajRuchLeczenie#0;class#StrategiaSzeryfa#0" expanded="false" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/StrategiaPomocnikaSzeryfaZliczajaca.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="method#podajRuchStrzelania#0;class#StrategiaPomocnikaSzeryfaZliczajaca#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dzikizachod/Strategia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dzikizachod/Gra.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4320">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+        <state relative-caret-position="640">
+          <caret line="27" column="52" lean-forward="false" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#podajGraczaNastepnego#0;class#Gra#0" expanded="false" />
+            <element signature="method#zwiekszNumerTury#0;class#Gra#0" expanded="false" />
+            <element signature="method#oddajAkcjeDoPuli#0;class#Gra#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/Gracz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2736">
-          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/InformacjeOWszystkichGraczach.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="67" column="43" lean-forward="false" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dzikizachod/Ruch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>

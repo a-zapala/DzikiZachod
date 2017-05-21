@@ -3,29 +3,18 @@ package dzikizachod;
 /**
  * Created by Andrzej on 18.05.2017.
  */
-public class Ruch
+public class Ruch               //klasa trzymajaca informacje o ruchu
 {
     private Akcja akcja;
-
-    public Akcja akcja()
-    {
-        return akcja;
-    }
-
-    public Gracz cel()
-    {
-        return cel;
-    }
-
     private Gracz cel;
     private boolean pusty;
 
-    public Ruch()
+    public Ruch()               //tworzenie pustego ruchu
     {
         this.pusty=true;
     }
 
-    public Ruch(Akcja akcja,Gracz cel) //TODO podeklarowac to co omijamy do testow tak jest lepiej
+    public Ruch(Akcja akcja,Gracz cel)
     {
         this.akcja=akcja;
         this.cel=cel;
@@ -39,11 +28,20 @@ public class Ruch
     }
 
 
+    protected Akcja akcja()
+    {
+        return akcja;
+    }
+
+    protected Gracz cel()
+    {
+        return cel;
+    }
+
+
     public boolean czyPusty()
     {
         return pusty;
     }
-
-
 
 }

@@ -10,18 +10,22 @@ public class StrategiaBandyty extends Strategia
 {
     private Bandyta bandyta;
 
-    public Bandyta bandyta()
+
+
+    protected Bandyta bandyta()
     {
         return bandyta;
     }
 
-    public void bandyta(Bandyta bandyta)
+    protected void bandyta(Bandyta bandyta)
     {
         this.bandyta = bandyta;
     }
 
+
+
     @Override
-    public Ruch podajRuchLeczenie(Stol stol)
+    protected Ruch podajRuchLeczenie(Stol stol)
     {
         if (bandyta.czyMoznaMnieLeczyc())
         {
@@ -34,7 +38,7 @@ public class StrategiaBandyty extends Strategia
     }
 
     @Override
-    public Ruch podajRuchStrzelania(Stol stol)
+    protected Ruch podajRuchStrzelania(Stol stol)
     {
         List<Gracz> graczeWZasiegu = stol.podajGraczyWZasiegu(bandyta);
 
@@ -50,7 +54,7 @@ public class StrategiaBandyty extends Strategia
     }
 
     @Override
-    public Ruch podajRuchDynamit(Stol stol)
+    protected Ruch podajRuchDynamit(Stol stol)
     {
         List<Gracz> graczeZgodnieZTura=new ArrayList<>();
 
@@ -60,6 +64,7 @@ public class StrategiaBandyty extends Strategia
         for(int i=0;i<3;i++)
         {
             graczeZgodnieZTura.add(pom);
+            pom= stol.podajAktywnegoGraczaNastepnego(pom);
         }
 
         for(Gracz g:graczeZgodnieZTura)
@@ -67,7 +72,7 @@ public class StrategiaBandyty extends Strategia
             if(g.czyJestemSzeryfem())
             {
                 Ruch ruch=new Ruch(Akcja.DYNAMIT,bandyta);
-                stol.lezyDynamit(ruch);
+                stol.lezyDynamit(true);
                 return ruch;
             }
         }

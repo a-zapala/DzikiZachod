@@ -9,7 +9,7 @@ import java.util.List;
 public class StrategiaBandytyDomyslna extends StrategiaBandyty
 {
     @Override
-    public Ruch podajRuchStrzelania(Stol stol)
+    protected Ruch podajRuchStrzelania(Stol stol)
     {
         Ruch strzelDoSzeryfa = super.podajRuchStrzelania(stol);
 
@@ -24,7 +24,7 @@ public class StrategiaBandytyDomyslna extends StrategiaBandyty
 
         for (Gracz g : graczeWZasieguSkracajacyDystansDoSzeryfa)
         {
-            if (!super.bandyta().bandyci().contains(g))
+            if (!super.bandyta().bandyciAktywni().contains(g))
             {
                 graczeWZasieguNieBedacyBandytami.add(g);
             }
